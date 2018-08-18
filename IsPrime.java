@@ -5,10 +5,14 @@ public class IsPrime {
     // A number n is a prime number if it is divisible only by 1 and itself(n) 
     // and not any other number between 1 to n
     // i.e. If 1 and n are the only two factors of n, then n is prime.
-    int count = 0; // count the numbers that n is divisibly by, form 2 to n-1
-    // If there are no factors of n between 2 and n-1, then n is prime
+    int count = 0; // count the numbers that n is divisibly by
 
-    for (int i = 2; i < n; i++) {
+    // There cannot be a factor of n, other than n itself, that is greater than n/2
+    // e.g. n=8, factors of 8 are 1, 2, 4, 8
+    // So the greatest factor of n, other than n itself, is n/2 i.e. 4
+    // So we will check for factors from 2 to n/2, and if there aren't any(i.e. count=0), then the no. is prime
+    // i.e. it has only 1 and n as factors
+    for (int i = 2; i <= n/2; i++) {
       if (n%i == 0)
         count++;
     }
