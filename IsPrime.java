@@ -4,14 +4,14 @@ public class IsPrime {
   public static boolean isPrime(int n) {
     // A number n is a prime number if it is divisible only by 1 and itself(n) 
     // and not any other number between 1 to n
-    int count = 0; // count the numbers that n is divisibly by, form 1 to n
+    int count = 0; // count the numbers that n is divisibly by, form 2 to n-1
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 2; i < n; i++) {
       if (n%i == 0)
         count++;
     }
 
-    return (count == 2); // returns true if count is 2 i.e. n is divisible only by 1 and n
+    return (count == 0); // returns true if count is 0 i.e. n is not divisible by any no. from 2 to n-1
   }
 
   public static void main(String[] args) {
