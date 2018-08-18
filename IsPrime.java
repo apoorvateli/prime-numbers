@@ -11,9 +11,7 @@ public class IsPrime {
         count++;
     }
 
-    if (count == 2)  // n is divisible only by 1 and n
-      return true;
-    else return false;
+    return (count == 2); // returns true if count is 2 i.e. n is divisible only by 1 and n
   }
 
   public static void main(String[] args) {
