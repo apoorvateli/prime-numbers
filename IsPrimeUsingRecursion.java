@@ -19,6 +19,8 @@ public class IsPrimeUsingRecursion {
   }
 
   public static boolean isPrime(int n) {
+    if (n<=1) return false;
+
     if (i==1) return true;
     else if (n%i == 0) return false;
     else {
