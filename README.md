@@ -14,3 +14,6 @@ Find the sum of all prime numbers in a given range
 
 5. PrintPrimesUptoN  
 Print all the prime numbers up to N using Sieve of Eratosthenes algorithm  
+
+6. SumOfPrimesUptoN  
+Find the sum of all prime numbers up to N using Sieve of Eratosthenes algorithm  
