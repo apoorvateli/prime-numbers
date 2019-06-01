@@ -19,4 +19,7 @@ Print all the prime numbers up to N using Sieve of Eratosthenes algorithm
 Find the sum of all prime numbers up to N using Sieve of Eratosthenes algorithm  
 
 7. IsPrimeUsingRecursion  
-Check whether a given number N is a prime or not, using recursion
+Check whether a given number N is a prime or not, using recursion  
+
+8. PrimeFactors  
+Print prime factorization of a number  
