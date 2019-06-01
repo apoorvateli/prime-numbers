@@ -17,6 +17,7 @@ public class PrimeFactors {
     Scanner sc = new Scanner(System.in);
 
     int n = sc.nextInt();
+    sc.close();
     printPrimeFactors(n);
   }
 
